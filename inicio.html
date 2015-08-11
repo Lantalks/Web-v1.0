@@ -1,0 +1,159 @@
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<script type="text/javascript">
+$(document).ready(function(){
+	$("section#destacado").css("opacity", "0");
+		$("section#destacado .degradado").css("opacity", "0");
+			$("section#destacado .texto").css("opacity", "0");
+	$("section#mas-leidos").css("opacity", "0");
+	$("section#contenido-principal").css("opacity", "0");
+	$("footer").css("opacity", "0");
+
+	$("header").animate({height: $("header").get(0).scrollHeight}, 300, function(){
+		$("#logotipo").animate({"padding-top": "10px", opacity: "1"}, 300, function(){
+			$("ul").animate({"padding-left": "10px", opacity: "1", "transition-duration": "0.5s"}, 300);
+			$("#mas-leidos").animate({opacity: "1"}, 300, function(){
+				$("#destacado").animate({opacity: "1"}, 300, function(){
+					$("#destacado .degradado").animate({opacity: "1"}, 300, function(){
+						$("#destacado .texto").animate({opacity: "1"}, 300, function(){
+							$("#contenido-principal").animate({opacity: "1"}, 300);
+							$("footer").animate({opacity: "1"}, 300);
+						});
+					});
+				});
+			});
+		});
+	});
+});
+</script>
+<!-- Pagina principal -->
+<main>
+	<section id="destacado" style="background-image: url(img/ejemplo2.jpg)">
+		<div class="degradado">
+			<div class="encuadre" style="text-align: center;">
+				<div class="texto">
+					<!--<h1>Cover landing de prueba</h1>-->
+					<!--<p>Acá va un parrafo descriptivo de la noticia super destacada del portal. </p>-->
+					<h1>Exito delicioso en la sintonía japonesa</h1>
+					<p>Shokugeki no Soma, el animé estrenado en Abril de este año levanta números muy jugosos en rating frente a la competencia en la televisión nipona. Enterate más acá. </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="tres-destacados-mas">
+		<div class="noticia">
+			<figure class="imagen" style="background-image: url(img/ejemplo.jpg)">
+				<div class="texto">
+					<h1>Microsoft compra Nokia por USD9000K</h1>
+					<p>sdfsdfsdfs</p>
+				</div>
+			</figure>
+		</div>
+		<div class="noticia">
+			<figure class="imagen">
+				<div class="texto">
+					<h1>sdssdfsfs</h1>
+					<p>sdfsdfsdfs</p>
+				</div>
+			</figure>
+		</div>
+		<div class="noticia">
+			<figure class="imagen">
+				<div class="texto">
+					<h1>sdssdfsfs</h1>
+					<p>sdfsdfsdfs</p>
+				</div>
+			</figure>
+		</div>
+	</section>
+	<section id="contenido-principal">
+	<h1>Esto también estuvo pasando en estos días</h1>
+		<div class="encuadre">
+			<div class="noticia-nivel1">
+				<figure class="imagen" style="background-image: url(img/ejemplo.jpg)"></figure>
+				<div class="texto">
+					<h1>Título corto</h1>
+					<p>Descripción corta.</p>
+				</div>
+			</div>
+			<div class="noticia-nivel1">
+				<figure class="imagen" style="background-image: url(img/ejemplo.jpg)"></figure>
+				<div class="texto">
+					<h1>Título super hipermega archi recontra ultra recontragigantescamente largo</h1>
+					<p>Descripción larga, pero para que la sea debería tener más palabras, no? Sino no sería largo, por eso empezamos a rellenar algo de texto sin sentido, como por ejemplo una explicación de cómo debe ser una descripción larga.</p>
+				</div>
+			</div>
+			<div class="noticia-nivel1">
+				<figure class="imagen" style="background-image: url(img/ejemplo.jpg)"></figure>
+				<div class="texto">
+					<h1>Noticia #3</h1>
+					<p>Descripción corta.</p>
+				</div>
+			</div>
+			<div class="noticia-nivel2">
+				<figure class="imagen" style="background-image: url(img/ejemplo.jpg)"></figure>
+				<div class="texto">
+					<h1>Noticia #1</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+				</div>
+			</div>
+			<div class="noticia-nivel2">
+				<div class="imagen" style="background-image: url(img/ejemplo.jpg)"></div>
+				<div class="texto">
+					<h1>Noticia #2</h1>
+					<p>Descripción corta.</p>
+				</div>
+			</div>
+			<div class="noticia-nivel2">
+				<div class="imagen" style="background-image: url(img/ejemplo.jpg)"></div>
+				<div class="texto">
+					<h1>Noticia #3</h1>
+					<p>Descripción corta.</p>
+				</div>
+			</div>
+			<div class="noticia-nivel3">
+				<h1>Noticia #3</h1>
+				<p>Descripción corta.</p>
+			</div>
+		</div>
+	</section>
+</main>
+<section id="mas-leidos">
+	<h1 id="titulo">Lo más leído</h1>
+	<div id="noticias-mas-leidas">
+		<div class="noticia">
+			<div class="imagen" style="background-image: url(img/ejemplo.jpg)"></div>
+			<div class="texto">
+				<h1>sdd</h1>
+				<p>dfdf</p>
+			</div>
+		</div>
+		<div class="noticia">
+			<div class="imagen" style="background-image: url(img/ejemplo.jpg)"></div>
+			<div class="texto">
+				<h1>sdd</h1>
+				<p>dfdf</p>
+			</div>
+		</div>
+		<div class="noticia">
+			<div class="imagen" style="background-image: url(img/ejemplo.jpg)"></div>
+			<div class="texto">
+				<h1>sdd</h1>
+				<p>dfdf</p>
+			</div>
+		</div>
+		<div class="noticia">
+			<div class="imagen" style="background-image: url(img/ejemplo.jpg)"></div>
+			<div class="texto">
+				<h1>sdd</h1>
+				<p>dfdf</p>
+			</div>
+		</div>
+		<div class="noticia">
+			<div class="imagen" style="background-image: url(img/ejemplo.jpg)"></div>
+			<div class="texto">
+				<h1>sdd</h1>
+				<p>dfdf</p>
+			</div>
+		</div>
+	</div>
+</section>
