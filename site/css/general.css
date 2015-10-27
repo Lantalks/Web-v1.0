@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Museo Sans", "Tahoma", "Verdana", "Arial", "Serif"; }
+
+html {
+  background-color: #141414; }
+
+body, main {
+  background-color: rgb(225, 225, 225); }
+
+main, footer {
+  display: block;
+  margin-left: 270px; }
+  @media all and (max-width: 600px) {
+    main, footer {
+      margin-left: 0px; } }
+
+footer {
+  padding: 10px;
+  text-align: center;
+  color: #FFF;
+  background-color: #141414; }
+
+.encuadre {
+  margin: 0 20px; }
+  section#mas-leidos .encuadre {
+    max-width: 310px;
+    margin: 0px;
+    margin-left: auto; }
+  #contenido-principal .encuadre {
+    margin: 0px 0px;
+    margin-right: 20px; }
+
+/* Carga del sitio */
+.precargaGeneral {
+  width: 100%;
+  text-align: center;
+  margin-top: 20%;
+  height: 80%; }
+
+.precargaSubSeccion {
+  height: 100px;
+  left: 35%;
+  position: absolute;
+  top: 35%;
+  z-index: 100; }
+
+.caja-carga {
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+  width: 100px; }
+
+.caja-carga img {
+  left: 35%;
+  position: absolute;
+  top: 31%;
+  width: 35%;
+  z-index: 2; }
+
+.circulo-externo {
+  background-color: transparent;
+  border-color: transparent rgba(0, 150, 255, 0.9) rgba(0, 150, 255, 0.9) transparent;
+  border-image: none;
+  border-radius: 50% 50% 50% 50%;
+  border-style: solid;
+  border-width: 1px;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  animation: spin .9s infinite linear;
+  -moz-animation: spin .9s infinite linear;
+  -webkit-animation: spin .9s infinite linear; }
+
+.circulo-interno {
+  background-color: transparent;
+  border-color: transparent rgba(0, 150, 255, 0.9) rgba(0, 150, 255, 0.9) transparent;
+  border-image: none;
+  border-radius: 50% 50% 50% 50%;
+  border-style: solid;
+  border-width: 10px;
+  box-shadow: 0 0 15px #0096ff;
+  height: 65%;
+  left: 9%;
+  margin: 0 auto;
+  opacity: 0.9;
+  position: absolute;
+  top: 8%;
+  width: 65%;
+  animation: spinoff .9s infinite linear;
+  -moz-animation: spinoff .9s infinite linear;
+  -webkit-animation: spinoff .9s infinite linear; }
+
+/*# sourceMappingURL=general.css.map */

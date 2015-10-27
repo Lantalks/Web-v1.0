@@ -1,0 +1,140 @@
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<script type="text/javascript">
+$(document).ready(function(){
+	$("section#destacado").css("opacity", "0");
+		$("section#destacado .degradado").css("opacity", "0");
+			$("section#destacado .texto").css("opacity", "0");
+			$("section#mas-leidos").css("opacity", "0");
+			$("section#contenido-principal").css("opacity", "0");
+			$("footer").css("opacity", "0");
+
+	
+			$("#mas-leidos").animate({opacity: "1"}, 300, function(){
+				$("#destacado").animate({opacity: "1"}, 300, function(){
+					$("#destacado .degradado").animate({opacity: "1"}, 300, function(){
+						$("#destacado .texto").animate({opacity: "1"}, 300, function(){
+							$("#contenido-principal").animate({opacity: "1"}, 300);
+							$("footer").animate({opacity: "1"}, 300);
+						});
+					});
+				});
+			});
+
+	$("<hr><center>").insertBefore('i.cita-textual'); 
+	$("</center><hr>").insertAfter('i.cita-textual'); 
+});
+</script>
+<!-- Pagina principal -->
+<main>
+	<section id="destacado" style="background-image: url(img/ejemplo2.jpg)">
+		<div class="degradado">
+			<div class="encuadre" style="text-align: center;">
+				<div class="texto">
+					<h1>Cover landing de prueba</h1>
+					<p>Acá va un parrafo descriptivo de la noticia super destacada del portal. </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		¿No tenes tiempo para leerlo? Guardalo en Pocket y leelo mas tarde. 
+	</section>
+	<section>
+		<div class="encuadre">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<h2>Titulo random</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<i class="cita-textual">
+			"ORAORAORAORAORAORAORAORAORAORAORAORAORA<br>
+			ORAORAORAORAORAORAORAORAORAORAORAORAORA<br>
+			ORAORAORAORAORAORAORAORAORAORAORAORAORA<br>
+			ORAORAORAORAORAORAORAORAORAORAORAORAORA<br>
+			ORAORAORAORAORAORAORAORAORAORAORAORAORA<br>
+			ORAORAORAORAORAORAORAORAORAORAORAORAORA<br>
+			ORAORAORAORAORAORAORAORAORAORAORAORAORA<br>
+			ORAORAORAORAORAORAORAORAORAORAORAORAORA<br>
+			ORAORAORAORA"</i>
+
+			<h3>Este titulo es mas largo, y debe serlo en cantidad de palabras como para que sea verdaderamente largo, no?</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</section>
+</main>
+<main>
+	<section>
+		<h1>¿Te gusto el articulo?</h1>
+		Compartilo en: Facebook | Twitter | GPlus | Telegram | WhatsApp 
+		<a data-pocket-label="pocket" data-pocket-count="vertical" class="pocket-btn" data-lang="en"></a>
+		<script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+	</section>
+</main>
+<main>
+	<section>
+		<h1>Comentarios</h1>
+		<div style="height: 300px;">Comentarios aca. </div>
+	</section>
+</main>
+<section id="mas-leidos">
+	<h1 id="titulo">Segui leyendo...</h1>
+	<div id="noticias-mas-leidas">
+		<div class="noticia">
+			<div class="imagen" style="background-image: url(img/ejemplo.jpg)"></div>
+			<div class="texto">
+				<h1>sdd</h1>
+				<p>dfdf</p>
+			</div>
+		</div>
+		<div class="noticia">
+			<div class="imagen" style="background-image: url(img/ejemplo.jpg)"></div>
+			<div class="texto">
+				<h1>sdd</h1>
+				<p>dfdf</p>
+			</div>
+		</div>
+		<div class="noticia">
+			<div class="imagen" style="background-image: url(img/ejemplo.jpg)"></div>
+			<div class="texto">
+				<h1>sdd</h1>
+				<p>dfdf</p>
+			</div>
+		</div>
+		<div class="noticia">
+			<div class="imagen" style="background-image: url(img/ejemplo.jpg)"></div>
+			<div class="texto">
+				<h1>sdd</h1>
+				<p>dfdf</p>
+			</div>
+		</div>
+		<div class="noticia">
+			<div class="imagen" style="background-image: url(img/ejemplo.jpg)"></div>
+			<div class="texto">
+				<h1>sdd</h1>
+				<p>dfdf</p>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,86 @@
+header {
+  position: fixed;
+  background: #505050;
+  color: #FFF;
+  width: 100%;
+  box-shadow: 0px 0px 4px black; }
+
+header #logotipo {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+  width: 130px;
+  height: 20px;
+  background-image: url(../img/brand-prov.png);
+  background-size: cover;
+  background-position: center; }
+
+/* Boton exclusivo en dispositivos moviles */
+header #menu-responsive {
+  vertical-align: top;
+  display: none;
+  padding: 10px;
+  max-width: 75px; }
+  @media all and (max-width: 600px) {
+    header #menu-responsive {
+      display: inline-block; } }
+
+/* Boton que permite ver el bloque de noticias recientes */
+header #ver-recientes {
+  vertical-align: top;
+  display: inline-block;
+  padding: 10px;
+  max-width: 75px; }
+
+/* Navegacion normal */
+@media all and (max-width: 600px) {
+  header nav#principal {
+    display: none; } }
+@media all and (min-width: 601px) {
+  header nav#principal {
+    display: inline-block; } }
+header nav#principal a {
+  text-decoration: none;
+  color: inherit; }
+header nav#principal ul {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  vertical-align: top; }
+  header nav#principal ul ul {
+    position: relative;
+    display: none;
+    background-color: transparent;
+    padding: 0; }
+    header nav#principal ul ul li {
+      list-style: none;
+      background-color: transparent;
+      padding: 10px; }
+      header nav#principal ul ul li:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: black; }
+  header nav#principal ul:hover {
+    background-color: rgba(0, 0, 0, 0.5); }
+  header nav#principal ul:hover ul {
+    display: block; }
+    header nav#principal ul:hover ul:hover {
+      background-color: transparent; }
+
+/* Bloque de noticias recientes ubicado debajo de la barra */
+#bloque-noticias-recientes {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 125px;
+  background-color: #141414;
+  overflow: hidden; }
+
+.bloque-noticia-reciente {
+  display: inline-block;
+  background-color: #FFF;
+  width: 200px;
+  height: 100px;
+  margin: 10px 5px;
+  margin-left: 25px; }
+
+/*# sourceMappingURL=header.css.map */

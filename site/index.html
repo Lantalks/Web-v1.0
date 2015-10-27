@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/general.css">
 		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/animaciones.css">
 		<link rel="stylesheet" type="text/css" href="css/inicio.css">
 
 		<!-- Páginas -->
@@ -20,13 +21,17 @@
 	<body>
 	<header>
 		<div class="encuadre">
-			<div id="logotipo">[Lantalks]</div>
-			<div id="menu-responsive">Secciones</div>
-			<nav>
-				<ul>Tech</ul>
-				<ul>Mobile</ul>
-				<ul>Random</ul>
-			</nav>
+			<div id="logotipo" alt="Lantalks" onclick="linkNav('inicio')"></div><ul id="menu-responsive" onclick="NavegacionResponsive();">Secciones</ul><ul id="ver-recientes" onclick="noticiasMasRecientes()">+3</ul><nav id="principal"><a href="#"><ul>Tech</ul></a><a href="sdsdsd.com"><ul>Mobile</ul></a><ul>Random</ul><ul>Nuestros medios<ul><li>Loop</li><li>Plux</li></ul></ul></nav>
+		</div>
+		<div id="bloque-noticias-recientes">
+			<div class="encuadre">
+				<div id="contenido-noticias-recientes">
+					<div class="caja-carga">
+						<div class="circulo-interno"></div>
+						<div class="circulo-externo"></div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 	<div id="contenido-pagina"></div>
