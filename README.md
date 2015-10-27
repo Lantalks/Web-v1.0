@@ -1,4 +1,4 @@
-# Web-v1.0 (Alpha 2)
+# Web-v1.0 (Alpha 3)
 Repositorio de la versión alpha del próximo sitio del portal de tecnología "Lantalks". 
 
 #Cambios realizados
